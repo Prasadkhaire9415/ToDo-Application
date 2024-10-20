@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        header img {
+            height: 75px;
+            width: 10%;
+        }
+        header nav {
+            display: flex;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1rem;
+            font-weight: bold;
+        }
+        .registration-container {
+            max-width: 400px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .registration-container h2 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .registration-container label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .registration-container input[type="text"],
+        .registration-container input[type="password"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .registration-container button {
+            width: 100%;
+            padding: 0.7rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .registration-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    
+<header>
+    <img src="ToDo application.png" alt="ToDo App Logo">
+    <nav>
+        <a href="index.html">Login</a>
+        <a href="register.html">Sign In</a>
+    </nav>
+</header>
+
+<div class="registration-container">
+    <h2>Registration</h2>
+    <form action="RegisterInsert" method="post">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname" required>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" required>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+</body>
+</html>
